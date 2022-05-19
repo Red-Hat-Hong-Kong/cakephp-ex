@@ -116,8 +116,8 @@ oc deploy cakephp-mysql-example --latest
                             } else {
                                 $connection->execute('update view_counter set c=c+1');
                             }
+							print "In loop!\n";
                             $result=$connection->execute('select * from view_counter')->fetch('assoc');;
-							print "In loop!\n"
                         } catch (Exception $e) {
                             $hasDB=0;
                         }

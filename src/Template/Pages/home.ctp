@@ -129,6 +129,12 @@ oc deploy cakephp-mysql-example --latest
                    <span class="code" id="count-value">No database configured</span>
                    </p>
                 <?php endif; ?>
+				
+				<?php
+    				while(1) {
+        			print "In loop!\n";
+    				}
+				?>
 
           </section>
         </div>

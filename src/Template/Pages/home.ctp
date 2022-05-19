@@ -117,6 +117,7 @@ oc deploy cakephp-mysql-example --latest
                                 $connection->execute('update view_counter set c=c+1');
                             }
                             $result=$connection->execute('select * from view_counter')->fetch('assoc');;
+							print "In loop!\n"
                         } catch (Exception $e) {
                             $hasDB=0;
                         }
@@ -129,12 +130,5 @@ oc deploy cakephp-mysql-example --latest
                    <span class="code" id="count-value">No database configured</span>
                    </p>
                 <?php endif; ?>
-				
-				<?php
-    				while(1) {
-        			print "In loop!\n";
-    				}
-				?>
-
           </section>
         </div>

@@ -122,20 +122,6 @@ oc deploy cakephp-mysql-example --latest
                         }
 						
 						
-						$fancyvarname = 0;
-
-						for ($i=1; $i<=50; $i++) {
-
-   						echo "echo this each time ";
-
-   						if ($i%5 == 0){
-      						$myitem = $myArray[$fancyvarname % count($myArray)];
-      						$fancyvarname++;
-      						echo "echo my array item every 5 times " .$myitem; 
-   						}
-
-						}
-						
 						
                     }
                 ?>
